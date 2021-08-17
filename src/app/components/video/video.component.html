@@ -1,0 +1,13 @@
+
+<p>
+  <img src="{{video.thumbnail_360_url}}"alt="">
+</p>
+<p>
+  <a href="https://www.dailymotion.com/video/{{video.id}}" target="_blank">{{video.title}}</a>
+</p>
+<p>{{video["owner.username"]}}</p>
+<img src="{{video['owner.avatar_80_url']}}">
+<p>
+  {{video.created_time*1000 | date}} {{video.views_total}}
+</p>
+<button (click)="AddtoPlayList()" >Add to Playlist</button>
